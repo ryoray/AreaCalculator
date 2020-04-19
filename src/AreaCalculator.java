@@ -5,7 +5,6 @@ public class AreaCalculator {
             return -1;
         }
         double areaOfCircle = radius * radius * Math.PI;
-        Math.round(areaOfCircle);
         return areaOfCircle;
     }
 
