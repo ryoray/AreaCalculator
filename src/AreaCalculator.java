@@ -1,12 +1,19 @@
 public class AreaCalculator {
 
-    private static final double PHI = 3.14;
-
     public static double area (double radius) {
         if (radius < 0) {
             return -1;
         }
-        double areaOfCircle = radius * radius * PHI;
+        double areaOfCircle = radius * radius * Math.PI;
+        Math.round(areaOfCircle);
         return areaOfCircle;
+    }
+
+    public static double area (double x, double y) {
+        if (x < 0 || y < 0) {
+            return -1;
+        }
+        double areaOfTriangle = x * y;
+        return areaOfTriangle;
     }
 }
